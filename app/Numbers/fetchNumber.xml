@@ -1,0 +1,17 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    
+    <ActionBar title="Calculator by JWH" icon="" />
+    
+    <GridLayout columns="*, *, *, *" rows="*, *, 2*" backgroundColor="#F8F8F8">
+
+        <label id="msg" text="Indtast tal nedenfor:" row="1" col="1" colSpan="2" class="h1 text-center"/>  
+        
+        <!-- <label text="Skriv tallet her: " row="1" col="0" colSpan="2" class="h1"/>  -->
+        <TextField  id="talll" text="{{tallet}}" row="1" col="1" colSpan="2" class="h1" color="grey" keyboardType="number"/> 
+
+        <button id="fetchNumBtn" tap="fetchNumBtn" text="OK" row="2" col="1" colSpan="2" backgroundColor="#43b883" class="h2 text-center" borderRadius="5%" />
+                
+        
+    </GridLayout>
+
+</Page>

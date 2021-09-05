@@ -1,0 +1,26 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    
+    <ActionBar title="Calculator by JWH" icon="" />
+    
+    <GridLayout columns="*, *, *, *" rows="*, *, *, *, *, *" backgroundColor="#F8F8F8">
+
+        <button id="fetchFirst" text="Hent 1. tal" row="0" col="1" colSpan="2" tap="{{goFetchFirst}}" backgroundColor="#43b883" class="h2 text-center" borderRadius="5%"/>
+
+        <label id="tal1" text="Tal 1: " row="1" col="1"  class="h1"/> 
+        <label id="showFirst" text="{{tal1}}" row="1" col="2" colSpan="2" class="h1" color="grey"/> 
+
+        <button id="fetchSecond" text="Hent 2. tal" row="2" col="1" colSpan="2" tap="{{goFetchSecond}}" backgroundColor="#43b883" class="h2 text-center" borderRadius="5%" />
+                
+        <label text="Tal 2: " row="3" col="1" class="h1"/>
+        <label id="showSecond" text="{{tal2}}" row="3" col="2" class="h1" colSpan="2" color="grey"/> 
+
+        <button id="add" text="+" row="4" col="0" tap="{{onAdd}}" backgroundColor="#43b883" class="h1" borderRadius="5%"/>
+        <button id="subtract" text="-" row="4" col="1" tap="{{onSubtract}}" backgroundColor="#43b883" class="h1" borderRadius="5%"/>
+        <button id="multiply" text="*" row="4" col="2" tap="{{onMultiply}}" backgroundColor="#43b883" class="h1" borderRadius="5%" />
+        <button id="divide" text="/" row="4" col="3" tap="{{onDivide}}" backgroundColor="#43b883" class="h2" borderRadius="5%"/>
+
+        <label text="Resultat: " row="6" col="1" class="h1" />
+        <label id="result" text="{{result}}" row="6" col="2" class="h1" colSpan="2" color="grey" />
+    </GridLayout>
+
+</Page>
